@@ -255,9 +255,9 @@ class PDFUtils:
         if data_copy.get('skills') and len(data_copy['skills']) > 15:
             data_copy['skills'] = data_copy['skills'][:15]
         
-        # Limit certifications to prevent overflow (max 5 certifications)
-        if data_copy.get('certifications') and len(data_copy['certifications']) > 5:
-            data_copy['certifications'] = data_copy['certifications'][:5]
+        # Limit certifications to prevent overflow (max 15 certifications)
+        if data_copy.get('certifications') and len(data_copy['certifications']) > 15:
+            data_copy['certifications'] = data_copy['certifications'][:15]
 
         # Process keyword bolding with complete word matching only
 
