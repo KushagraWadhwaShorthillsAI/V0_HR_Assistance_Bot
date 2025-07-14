@@ -308,7 +308,7 @@ class DocxUtils:
     def create_compatible_footer_table(footer, width_inches=8.5):
         """Create a footer table with enhanced compatibility"""
         try:
-            footer_table = footer.add_table(rows=1, cols=1)
+            footer_table = footer.add_table(rows=1, cols=1, width = Inches(width_inches))
             footer_table.alignment = WD_TABLE_ALIGNMENT.CENTER
             footer_table.autofit = False
             
@@ -551,7 +551,7 @@ class DocxUtils:
             section.right_margin = Inches(0.2)
             
             # Set header and footer distances for better compatibility
-            section.header_distance = Inches(0.15)
+            section.header_distance = Inches(0.08)
             section.footer_distance = Inches(0.15)
             
             # Standard page setup for better compatibility
