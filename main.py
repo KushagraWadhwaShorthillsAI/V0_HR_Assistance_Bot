@@ -175,7 +175,7 @@ page = st.sidebar.selectbox("Navigate", [
     "Resume Search Engine",
     "JD-Resume Regeneration",
     "Database Management", 
-], index=0)  # Set index=0 to make Resume Search Engine the default
+], index=1)  # Set index=1 to make JD-Resume Regeneration the default
 
 # Add explanatory text based on selected page
 if page == "Resume Search Engine":
